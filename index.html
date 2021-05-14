@@ -242,5 +242,20 @@
               </div>
               <p class="footer-last">当Webサイトに掲載されている全ての画像・文章・情報等は著作権により保護されております。著作権者の許可なく当Webサイトの内容の全て又は一部をいかなる手段においても複製・転載・流用・転売・複写等することを固く禁じます。</p>
         </footer>
+        <script>
+            function toggleNav() {
+        const body = document.body;
+        const hamburger = document.getElementById("js-hamburger");
+        const overlay = document.getElementById("js-overlay");
+        hamburger.addEventListener("click", function () {
+          body.classList.toggle("nav-open");
+        });
+        overlay.addEventListener("click", function () {
+          body.classList.remove("nav-open");
+        });
+        }
+      
+        toggleNav();
+        </script>
     </body>
 </html>
