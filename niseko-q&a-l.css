@@ -1,0 +1,300 @@
+/*
+Theme Name: koala-wp
+Theme URL: programingbeginer.biz/
+Description: サンプルテーマ
+Version: 2.0
+Author: koala
+Authour URL: programingbeginer.biz/
+*/
+
+@font-face {
+    font-family:"bold";
+    src: url(NasuM-Bold-20200227.ttf);
+}
+@font-face {
+    font-family:"normal";
+    src: url(Nasu-Regular-20200227.ttf);
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color:#c9b0eb2a;
+    overflow-x: hidden;
+}
+.border{
+    margin:20px auto;
+}
+h1{
+    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+}
+p,a,li{
+    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+}
+
+a,h1,h2,h3,h4,p{
+    
+    color:rgb(61, 61, 61);
+    letter-spacing: 1px;
+}
+#en{
+    font-family:'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+}
+
+@media screen and (min-width: 1000px){
+    /*  */
+    .header__inner{
+        display:none;
+    }
+    /*  */
+    header{
+        width:100%;
+        border-bottom:2px solid #bbbbbb;
+        height:90px;
+        padding-top:8px;
+        background-color:white;
+    }
+    #nav-bar3{
+        position:absolute;
+        list-style:none;
+        left:350px;
+        top:55px;
+        text-align:center;
+    }
+    
+    #nav-bar3 li{
+        display:inline-block;
+        width:auto;
+        padding:0 10px;
+        height:100%;
+        font-weight:bold;
+        border-right: 1px solid #bbbbbb;   
+        font-size:15px;
+        vertical-align:top;
+    }
+    #nav-bar3 li:last-child{
+        border-right: none;
+    }
+    /* ヘッダー１*/
+    #header1{
+        width:1100px;
+        margin:0 auto;
+        height:70px;
+        position:relative;
+        padding:5px 0;
+    }
+    #header1 img{
+        width:110px;
+        position:absolute;
+        left:0;
+        
+    }
+    #header-btn-ct{
+        height:100%;
+        width:300px;
+        position:absolute;
+        right:0;
+    }
+    #header-btn-ct a{
+        width:140px;
+        height:50px;
+        display:inline-block;
+        text-align:center;
+        border-radius:30px;
+        font-size:15px;
+        margin-top:8px;
+        filter: drop-shadow(5px 5px 5px #aaa);
+    }
+    #line-btn:hover{
+        transition:0.4s;
+        background-color:white;
+        color:#57BD37;
+        border:1px solid #57BD37;
+    }
+    #download-btn:hover{
+        background-color:white;
+        color:rgb(139, 209, 206);
+        transition:0.4s;
+        border:1px solid rgb(139, 209, 206);
+    }
+    #download-btn{
+        background-color:rgb(139, 209, 206);
+        color:white;
+    }
+    #line-btn{
+        background-color:#57BD37;
+        color:white;
+    }
+    #header-access{
+        position:absolute;
+        width:180px;
+        height:50px;
+        left:590px;
+        top:16px;
+    }
+    #header-access h1{
+        font-size:18px;
+    }
+    /* ヘッダー２ */
+    #header2{
+        width:1100px;
+        margin:0 auto;
+        height:48px;
+        text-align:center;
+    }
+    #nav-bar{
+        list-style: none;
+    }
+    #nav-bar li{
+        display:inline-block;
+        width:19%;
+        height:100%;
+        line-height:47px;
+        font-weight:bold;
+        border-right: 1px solid #bbbbbb;   
+    }
+    #nav-bar li:last-child{
+        border-right: none;
+    }
+    /* メイン */
+    .question-ct{
+        width:1100px;
+        margin:20px auto;
+        border-radius:20px;
+        background-color:white;
+        text-align:center;
+        padding:20px 0;
+    }
+    .question-ct hr{
+        width:80%;
+        margin:0 auto;
+    }
+    .question-indi{
+        width:80%;
+        margin:5px auto;
+        text-align:left;
+    }
+    
+    #question-ct hr{
+        width:80%;
+        margin:0 auto;
+    }
+    .question{
+        font-size:18px;
+        padding:20px 0;
+        color:rgb(76, 76, 207);
+        line-height:34px;
+    }
+    .question span{
+        padding:10px;
+        border-radius:50%;
+        background-color:rgb(76, 76, 207);
+        color:white;
+        font-weight:bold;
+        margin-right:10px;
+    }
+    .question-ct a{
+        text-decoration: underline;
+    }
+    .answer{
+        font-size:18px;
+        padding:20px 0;
+        color:rgb(241, 134, 152);
+        line-height:34px;
+    }
+    .answer-atama{
+        padding:10px;
+        border-radius:50%;
+        background-color:rgb(241, 134, 152);
+        color:white;
+        font-weight:bold;
+        margin-right:10px;
+    }
+    .answer span{
+        font-weight:bold;
+    }
+    /* フッター */
+    /* footer */
+    footer{
+        width:100%;
+        
+        background-color:rgba(128, 128, 128, 0.259);
+        padding:20px 0;
+    }
+    .footer-ct{
+        width:1100px;
+        height:100%;
+        margin:0 auto;
+    }
+    .footer-1{
+        width:200px;
+        height:300px;
+        
+        padding-top:20px;
+        display:inline-block;
+        vertical-align:top;
+        border-right:2px solid rgb(91, 91, 91);
+    }
+    .footer-1 h1{
+        color:rgb(91, 91, 91);
+        font-size:20px;
+        margin-bottom:20px;
+        text-align:center;
+    }
+    .footer-1 a{
+        line-height:30px;
+        font-size:15px;
+        color:rgb(91, 91, 91);
+        text-decoration: underline;
+    }
+    .footer-2{
+        width:200px;
+        height:300px;
+        border-right:2px solid rgb(91, 91, 91);
+        padding-top:20px;
+        display:inline-block;
+        vertical-align:top;
+        text-align:center;
+    }
+    .footer-2 h1{
+        color:rgb(91, 91, 91);
+        font-size:20px;
+        margin-bottom:20px;
+        text-align:center;
+    }
+    .footer-1 a{
+        line-height:30px;
+        font-size:15px;
+        color:rgb(91, 91, 91);
+        text-decoration: underline;
+    }
+    .fab{
+        font-size:50px;
+    }
+    .footer-last{
+        text-align:center;
+        width:80%;
+        margin:0 auto;
+        font-size:14px;
+        color:rgb(91, 91, 91);
+        margin-top:50px;
+    }
+    .footer-3{
+        width:600px;
+        height:300px;
+        padding-top:20px;
+        display:inline-block;
+        vertical-align:top;
+        text-align:center;
+    }
+    .footer-3 img{
+        height:200px;
+    }
+    .footer-3 p{
+        font-size:22px;
+    }
+}
